@@ -19,6 +19,7 @@
                 <li><a href="">SERVICES</a></li>
                 <li><a href="">HIRE ME</a></li>
             </ul>
+            <img src="img/moon.png" alt="Night Mode" id="icon">
         </nav>
         <div class="info">
             <h1>I'm <span>Kate</span> Amelia</h1>
@@ -28,8 +29,8 @@
             <a href="#">Download CV</a>
         </div>
         <div class="img-box">
-            <img src="/img/pattern.png" class="bg">
-            <img src="/img/girl.png" class="main">
+            <img src="img/pattern.png" class="bg">
+            <img src="img/girl.png" class="main">
         </div>
         <div class="social-links">
             <a href="https://br.linkedin.com/in/gustavo-murilo-0970001b4" target="blank"><i class="fab fa-linkedin-in"></i></a>
@@ -39,6 +40,16 @@
         </div>
        
     </div>
-    
+    <script>
+        let icon = document.getElementById('icon');
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = 'img/sun.png';
+            } else {
+                icon.src = "img/moon.png"
+            }
+        }
+    </script>
 </body>
 </html>
